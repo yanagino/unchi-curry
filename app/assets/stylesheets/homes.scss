@@ -1,0 +1,104 @@
+// Place all the styles related to the homes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.header-all {
+  text-align: center;
+}
+
+.header-text {
+  margin: 90px 0 100px 0;
+  vertical-align: middle;
+  text-align: left;
+  width: 50%;
+  display: inline-block;
+}
+
+.header-text h1 {
+  padding-top: 20px;
+  margin-bottom: 0;
+  color: #172852;
+  font-size: 50px;
+}
+
+.header-image {
+  width: 45%;  
+  vertical-align: middle;
+}
+
+.btn-login {
+  background-color: rgb(3, 169, 190);
+  margin-top: 20px;
+  margin-bottom: 60px;
+  box-shadow: 0 6px rgb(1, 77, 87);
+}
+
+.btn-login:active {
+  position: relative;
+  top: 6px;
+  box-shadow: none;
+}
+
+.btn-login span {
+  padding-right: 7px;
+}
+
+.different-background {
+  background-color: rgb(235, 235, 235);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.lp-text h3 {
+  font-size: 24px;
+  color: #172852;
+}
+
+.bottom-background {
+  background-color: rgba(234, 240, 250, 0.863);
+}
+
+.bottom-background h2 {
+  margin: 0;
+}
+
+.random-background {
+  background-color: rgb(240, 240, 240);
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.random-background h1 {
+  margin: 0;
+}
+
+.btn-random {
+  background-color: rgba(9, 60, 136, 0.884);
+  box-shadow: 0 6px rgba(3, 25, 58, 0.884);
+  margin-bottom: 25px;
+}
+
+.btn-random:active {
+  position: relative;
+  top: 6px;
+  box-shadow: none;
+}
+
+.roots-text {
+  margin: 70px 0 80px 0;
+  text-align: center;
+}
+
+.roots-explain {
+  color: #172852;
+  letter-spacing: 0.3px;
+  line-height: 32px; 
+}
+
+.how-live {
+  font-size: 50px;
+  color: rgb(1, 54, 124);
+  padding: 70px 0 100px 0;
+  margin-bottom: 0;
+}

@@ -1,0 +1,35 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.user {
+  text-align: center;
+  margin: 70px 0 90px 0;
+}
+
+.user h1 {
+  font-size: 40px;
+}
+
+.title-index {
+  text-align: center;
+  color: #172852;
+  font-size: 25px;
+  margin-bottom: 45px;
+}
+
+.btn-form {
+  background-color: orange;
+  box-shadow: 0 6px rgb(170, 111, 1);
+}
+
+.btn-form:active {
+  position: relative;
+  top: 6px;
+  box-shadow: none;
+}
+
+.paginate span {
+  font-size: 20px;
+  font-weight: bold;
+}

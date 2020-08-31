@@ -1,0 +1,705 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ * {
+  box-sizing: border-box;
+}
+
+ body {
+  margin: 0;
+  font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif;
+}
+
+ header {
+   background-color: rgba(253, 255, 244, 0.863);
+   margin: 0 auto;
+   padding: 5px 0;
+   position :fixed;
+   top: 0;
+   z-index: 10;
+   width: 100%;
+ }
+
+ header img {
+  height: 37px;
+  margin-left: 50px;
+  padding-top: 10px;
+ }
+
+ .login-user, .roots {
+  float: right;
+  font-size: 15px;
+  padding: 10px 60px 0 0;
+ }
+
+ .roots {
+   padding-right: 80px 
+ }
+
+ .btn a:link, .btn a:hover, .btn a:visited {
+   color: white;
+ }
+
+ a {
+   text-decoration: none;
+ }
+
+ header a:link, header a:hover, header a:visited {
+  color: #172852;
+ }
+
+ header span {
+   color: black;
+ }
+
+ .clear {
+   clear: left;
+   vertical-align: middle;
+ }
+
+ .background {
+   background-color: rgba(253, 255, 244, 0.863);
+ }
+
+ .container {
+   margin: 0 auto;
+   max-width: 1030px;
+   width: 100%;
+   padding: 60px 60px 0 60px;
+ }
+
+ .alert {
+   color: white;
+   text-align: center;
+   margin-top: 53px;
+   height: 28px;
+   line-height: 28px;
+   position: absolute;
+   width: 100%;
+ }
+
+  .alert-success {
+   background-color: rgb(41, 199, 27);
+  }
+
+  .alert-warning {
+   background-color: rgb(245, 154, 35);
+  }
+
+  .alert-danger {
+   background-color: rgb(245, 77, 35);
+  }
+
+ .btn {
+   display: inline-block;
+   color: white;
+   border-radius: 70px;
+   opacity: 0.9;
+   font-size: 22px;
+ }
+
+ .btn a {
+   padding: 15px 40px;
+   display: block;
+ }
+
+ .container h1 {
+   margin-top: 0;
+ }
+ 
+ .contents h3 {
+  text-align: center;
+  color: rgb(250, 8, 101);
+ }
+
+ footer {
+  background-color: #172852;
+  color: white;
+  height: 150px;
+  padding: 30px 20px;
+  text-align: right;
+ }
+
+ footer a:link, footer a:hover, footer a:visited {
+  color: white;
+}
+
+footer a {
+  font-size: 30px;
+  margin-right: 50px;
+}
+
+footer p {
+  margin-right: 50px;
+}
+
+
+/*タブレット向けデザイン--------------------------------------------*/
+/*タブレット向けデザイン--------------------------------------------*/
+/*タブレット向けデザイン--------------------------------------------*/
+@media all and (max-width: 850px) {
+ .container {
+    padding: 40px 30px 0 30px;
+ }
+
+ header img {
+  margin-left: 30px;
+ }
+
+ .login-user, .roots {
+  padding: 10px 40px 0 0;
+ }
+
+  .header-all {
+    text-align: center;
+  }
+
+  .header-text h1 {
+    font-size: 35px;
+  }
+
+  .header-image {
+    margin: 0;
+    width: 40%;
+  }
+
+  .login-user {
+    padding-top: 7px;
+    font-size: 20px;
+  }
+
+  .roots {
+    padding: 0 40px 0 0;
+    font-size: 30px;
+  }
+
+  .hidden-text {
+    display: none;
+  }
+
+  .lp-text h3 {
+    font-size: 22px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .btn-login {
+    text-align: center;
+  }
+
+  .btn button {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .contents-wrapper h2 {
+    font-size: 25px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin: 0 35px 40px 35px;
+  }
+
+  .random-background {
+    margin: 20px 0;
+  }
+  /*↓名前の由来--------------------------------------------*/
+  .roots-text {
+    margin: 40px 0 60px 0;
+    padding-top: 30px;
+  }
+  
+  .roots-explain {
+    letter-spacing: 0.3px;
+    line-height: 32px; 
+  }
+
+  .how-live {
+    font-size: 40px;
+    color: rgb(1, 54, 124);
+    padding: 50px 0 100px 0;
+    margin-bottom: 0;
+  }
+
+  /*↓contents--------------------------------------------*/
+  .contents {
+    margin-bottom: 50px;
+  }
+  
+  .contents-bottom {
+    margin-bottom: 50px;
+  }
+  
+  .content {
+    padding: 65px 40px;
+    font-size: 19px;
+    margin-bottom: 40px;
+   }
+  
+   .content a {
+    padding: 45px 10px 0px 10px;
+   }
+  
+   .content-title {
+    left: 15px;
+   }  
+
+  /*↓show--------------------------------------------*/
+  .show-text {
+    margin-bottom: 45px;
+    font-size: 25px;
+  }
+  
+  .vote-forms {
+    font-size: 25px;
+  }
+
+  .optionA-head {
+    margin-bottom: 40px;
+  }
+  
+  .optionA {
+    margin-bottom: 20px;
+    padding-left: 5px;
+    border-left: 15px solid rgb(47, 144, 255);
+    margin-left: 3px;
+  }
+  
+  .optionB {
+    padding-left: 5px;
+    border-left: 15px solid rgb(255, 47, 134);
+    margin-left: 3px;
+  }
+
+  /*↓result--------------------------------------------*/
+  .summary p {
+    font-size: 25px;
+  }
+  
+  .result-title {
+    margin-bottom: 45px;
+  }
+  
+  .user-introduction {
+    margin-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .result-vote1 {
+    padding-left: 5px;
+    border-left: 10px solid rgb(47, 144, 255);
+  }
+  
+  .result-vote2 {
+    padding-left: 5px;
+    border-left: 10px solid rgb(255, 47, 134);
+  }
+  
+  .summary-vote1 {
+    padding: 5px 15px;
+    margin-left: 0;
+  }
+  
+  .summary-vote2 {
+    padding: 5px 15px;
+    margin-left: 0;
+  }
+  
+  .btn-destroy {
+    margin: 25px 0 0 0;
+  }
+  
+  .result-vote1-bottom {
+    margin-bottom: 60px;
+  }
+  
+  .btn-tweet {
+    margin-top: 35px;
+  }
+
+  /*↓new--------------------------------------------*/
+  .form-text {
+    margin: 70px 0 40px 0;
+   }
+  
+   .new-form {
+     margin-bottom: 30px;
+   }
+  
+   .new-form input {
+     font-size: 17px;
+     width: 82%;
+   }
+  
+   .new-form label {
+   font-size: 19px;
+   margin-right: 10px;
+   }
+  
+   .error_messages {
+    margin: 0 50px 40px 50px;
+    font-size: 17px;
+   }
+
+  .btn-submit {
+    margin: 30px 0 80px 0;
+    padding: 10px 80px;
+  }  
+
+  /*↓user/show--------------------------------------------*/
+  .user {
+    text-align: center;
+    margin: 70px 0 90px 0;
+  }
+  
+  .user h1 {
+    font-size: 30px;
+  }
+  
+  .title-index {
+    font-size: 20px;
+    margin-bottom: 45px;
+  }
+  
+  .paginate span {
+    font-size: 20px;
+  }
+
+  .paginate {
+    text-align: center;
+  }
+
+  /*↓footer--------------------------------------------*/
+  footer {
+    text-align: center;
+  }
+
+  footer a, footer p {
+    margin: 10px 0 0 0;
+  }
+}
+
+
+/*スマホ向けデザイン----------------------------------------------*/
+/*スマホ向けデザイン----------------------------------------------*/
+/*スマホ向けデザイン----------------------------------------------*/
+@media all and (max-width: 480px) {
+  .container {
+    padding: 10px 10px 0 10px;
+ }
+
+  header {
+    padding: 0;
+  }
+
+  header img {
+    margin-left: 10px;
+    height: 31px;
+    padding-top: 10px;
+  }
+
+  .login-user {
+    padding: 3px 10px 0 0;
+    font-size: 20px;
+  }
+
+  .roots {
+    padding: 0 10px 0 0;
+    font-size: 24px;
+  }
+
+  .alert {
+    margin-top: 37px;
+    height: 20px;
+    line-height: 20px;
+  }
+
+  .header-text {
+    margin: 60px 0;
+  }
+
+  .header-text h1 {
+    font-size: 25px;
+  }
+
+  .header-image {
+    margin: 0;
+    width: 40%;
+  }
+
+  .lp-text h3 {
+    font-size: 17px;
+  }
+
+  .different-background {
+    margin-bottom: 50px;
+  }
+
+  .btn a {
+    padding: 5px 40px;
+    display: block;
+    font-size: 17px;
+  }
+
+  .btn-login {
+    margin-top: 5px;
+    margin-bottom: 40px;
+  }
+
+  .btn button {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .contents-wrapper h2 {
+    font-size: 19px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 0 30px 0;
+  }
+
+  .random-background {
+    margin: 0 0 60px 0;
+    padding: 10px 0; 
+  }
+
+  .random-background h1 {
+    font-size: 20px;
+  }
+
+  .random-background h3 {
+    font-size: 17px;
+  }
+
+  .bottom-background {
+    text-align: center;
+  }
+
+  .bottom-background h2 {
+    padding-top: 10px;
+    font-size: 19px;
+  }
+
+  .bottom-background h3 {
+    font-size: 17px;
+    margin-top: 8px;
+  }
+
+  .bottom-background p {
+    font-size: 13px;
+  }
+
+  /*↓名前の由来--------------------------------------------*/
+  .roots-text {
+    margin: 40px 0 60px 0;
+    padding-top: 30px;
+    font-size: 14px;
+  }
+
+  .roots-explain h3 {
+    font-size: 17px;
+  }
+
+  .how-live {
+    font-size: 30px;
+    color: rgb(1, 54, 124);
+    padding: 50px 0 100px 0;
+    margin-bottom: 0;
+  }
+
+  /*↓contents--------------------------------------------*/
+  .contents {
+    margin-bottom: 50px;
+  }
+  
+  .contents-bottom {
+    margin-bottom: 50px;
+  }
+  
+  .content {
+    padding: 65px 40px;
+    font-size: 18px;
+    margin-bottom: 40px;
+   }
+  
+   .content a {
+    padding: 45px 10px 0px 10px;
+   }
+  
+   .content-title {
+    transform: rotate(-4deg);
+    left: 5px;
+    font-size: 16px;
+   }  
+
+   .contents h3 {
+     font-size: 17px;
+   }
+
+  /*↓show--------------------------------------------*/
+  .show-text {
+    margin-bottom: 45px;
+    font-size: 22px;
+  }
+  
+  .vote-forms {
+    font-size: 22px;
+  }
+
+  .optionA-head {
+    margin-bottom: 40px;
+  }
+  
+  .optionA {
+    margin-bottom: 20px;
+    padding-left: 2px;
+    border-left: 12px solid rgb(47, 144, 255);
+    margin-left: 0px;
+  }
+  
+  .optionB {
+    padding-left: 2px;
+    border-left: 12px solid rgb(255, 47, 134);
+    margin-left: 0px;
+  }
+
+  .btn-vote button {
+    padding: 10px;
+  }
+
+  .link-summary {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 13px;
+  }
+
+  /*↓result--------------------------------------------*/
+  .summary p {
+    font-size: 22px;
+  }
+  
+  .result-title {
+    margin-bottom: 45px;
+  }
+  
+  .user-introduction {
+    margin-top: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .result-vote1 {
+    padding-left: 2px;
+    border-left: 12px solid rgb(47, 144, 255);
+  }
+  
+  .result-vote2 {
+    padding-left: 2px;
+    border-left: 12px solid rgb(255, 47, 134);
+  }
+  
+  .summary-vote1 {
+    padding: 5px 10px;
+  }
+  
+  .summary-vote2 {
+    padding: 5px 10px;
+  }
+  
+  .btn-destroy {
+    margin: 25px 0 0 0;
+  }
+  
+  .result-vote1-bottom {
+    margin-bottom: 60px;
+  }
+  
+  .btn-tweet {
+    margin-top: 35px;
+  }
+
+  /*↓new--------------------------------------------*/
+  .form-text {
+    margin: 70px 0 40px 0;
+    font-size: 15px;
+   }
+  
+   .new-form {
+     margin-bottom: 30px;
+     text-align: left;
+  }
+  
+   .new-form input {
+     font-size: 15px;
+     width: 100%;
+     height: 40px;
+   }
+  
+   .new-form label {
+   font-size: 19px;
+   margin: 0 0 0 5px;
+   font-weight: bold;
+   }
+  
+   .error_messages {
+    margin: 0 50px 40px 50px;
+    font-size: 17px;
+   }
+
+  .btn-submit {
+    margin: 30px 0 80px 0;
+    padding: 10px 80px;
+  }
+
+  /*↓user/show--------------------------------------------*/
+  .user {
+    text-align: center;
+    margin: 70px 0 70px 0;
+  }
+  
+  .user h1 {
+    font-size: 30px;
+  }
+  
+  .title-index {
+    font-size: 17px;
+    margin-bottom: 30px;
+  }
+  
+  .paginate span {
+    font-size: 20px;
+  }
+
+  .paginate {
+    text-align: center;
+  }
+
+  /*↓footer--------------------------------------------*/
+  footer {
+    text-align: center;
+    height: 110px;
+    padding: 15px 20px;
+  }
+
+  footer a, footer p {
+    margin: 10px 0 0 0;
+  }
+}
+}

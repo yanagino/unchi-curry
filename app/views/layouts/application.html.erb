@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>カレー味のうんち</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%# Font Awesome用の設定 %>
+    <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <%= render("layouts/header") %>
+    <%= render("layouts/flash_messages") %>
+
+    <div class="background">
+        <%= yield %>
+      </div>
+    </div>
+
+    <%= render("layouts/footer") %>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+<div class="container header-all">
+<div class="header-text">
+  <h1>50対50、</h1>
+  <h1>ちょうどを、 </h1>
+  <h1>作り出そう。 </h1>
+</div>
+<img src="/images/headv3.png" class="header-image">
+<div class="clear"></div>
+</div>
+
+<div class="different-background">
+  <div class="container">
+  <div class="lp-text">
+    <h3>「カレー味のうんち」は、答えがちょうど50対50になるような究極の質問の作成を目指すサイトです。</h3>
+    <h3>サービス名の由来は、右上の<i class="fas fa-home"></i>マークより確認できます。</h3>
+  </div>
+  <div class="btn btn-login">
+    <%= link_to("/auth/twitter") do %>
+      <span class="fab fa-twitter"></span>Twitterでログイン
+    <% end %>
+  </div>
+  </div>
+</div>
+
+<div class="container">
+<div class="contents-wrapper">
+  <div class="order-even">
+    <h2 class="title-even"><i class="fas fa-balance-scale"></i> ちょうど50対50のお題</h2>
+    <div class="contents">
+      <% unless @themes_even.blank? %>
+        <% @themes_even.each do |theme| %>
+          <div class="content">
+            <span class="content-title">投票数：<%= theme.vote1 + theme.vote2 %></span>
+            <%= link_to(theme.title,"/themes/#{theme.id}") %>
+          </div>
+        <% end %>
+      <% else %>
+        <h3>現在、ちょうど50対50のお題はありません</h3>
+      <% end %>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container">
+<div class="contents-wrapper">
+  <div class="order-difference">
+    <h2 class="title-difference"><i class="fas fa-tint"></i> 白黒ついたお題</h2>
+    <div class="contents">
+      <% unless @themes_difference.blank? %>
+        <% @themes_difference.each do |theme| %>
+          <div class="content">
+            <span class="content-title">投票数：<%= theme.vote1 + theme.vote2 %></span>
+            <%= link_to(theme.title,"/themes/#{theme.id}") %>
+          </div>
+        <% end %>
+      <% else %>
+        <h3>現在、白黒ついたお題はありません</h3>
+      <% end %>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="random-background">
+<div class="container">
+  <h1>【ランダムお題ボタン】</h1>
+  <h3>ランダムで適当なお題の回答ボタンに飛びます</h3>
+  <div class="btn btn-random">
+    <%= link_to("/themes/#{@theme.id}") do %>
+      <span class="fas fa-random"></span> ランダムお題ボタン
+    <% end %>
+  </div>
+</div>
+</div>
+
+<div class="container">
+<div class="contents-wrapper">
+  <div class="order-popular">
+    <h2 class="title-popular"><i class="fas fa-sun"></i> 人気のお題</h2>
+    <div class="contents">
+      <% @themes_popular.each do |theme| %>
+        <div class="content">
+          <span class="content-title">投票数：<%= theme.vote1 + theme.vote2 %></span>
+          <%= link_to(theme.title,"/themes/#{theme.id}") %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="container">
+<div class="contents-wrapper">
+  <div class="order-new">
+    <h2 class="title-new"><i class="fas fa-lightbulb"></i> 新着のお題</h2>
+    <div class="contents contents-bottom">
+      <% @themes_new.each do |theme| %>
+        <div class="content">
+          <span class="content-title">投票数：<%= theme.vote1 + theme.vote2 %></span>
+          <%= link_to(theme.title,"/themes/#{theme.id}") %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="bottom-background">
+<div class="container">
+  <h2>【ログインしてできること】</h2>
+  <h3>お題の投稿ができるようになります</h3>
+
+  <p>
+  ー注意事項ー
+  <br>本サービスはすべて無料で利用できます。
+  <br>勝手にTwitterでツイート・RT・フォローなどをすることはありませんのでご安心ください。
+  <br>またログインに使用したTwitterのアカウント情報は、本サービス以外に使用することはありません。
+  </p>
+  <div class="btn btn-login">
+    <%= link_to("/auth/twitter") do %>
+      <span class="fab fa-twitter"></span>Twitterでログイン
+    <% end %>
+  </div>
+</div>
+</div>

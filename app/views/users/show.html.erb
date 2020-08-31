@@ -1,0 +1,33 @@
+<div class="container">
+
+<div class="user">
+  <h1><%= @user.name %>さん</h1>
+
+<% if correct_user_create %>
+  <div class="btn btn-form">
+    <%= link_to("/themes/new") do %>
+      <span class="fa fa-carrot"></span> お題を投稿する
+    <% end %>
+  </div>
+<% end %>
+</div>
+  
+<div class="title-index">
+  <h2>投稿したお題一覧</h2>
+</div>
+
+<div class="contents-wrapper">
+  <div class="contents contents-bottom">
+    <% @themes.each do |theme| %>
+      <div class="content">
+        <span class="content-title">投票数：<%= theme.vote1 + theme.vote2 %></span>
+        <%= link_to(theme.title,"/themes/#{theme.id}/summary") %>
+      </div>
+    <% end %>
+    <div class= "paginate">
+      <%= paginate @themes %>
+    </div>
+  </div>
+</div>
+
+</div>

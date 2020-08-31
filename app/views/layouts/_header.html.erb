@@ -1,0 +1,29 @@
+<header>
+  <% if logged_in? %>
+    <a href="/"><img src="/images/logov3.png" alt="カレー味のうんち"></a>
+    <div class="login-user">
+      <%= link_to("/users/#{current_user.uid}") do %>
+        <i class="fas fa-user"></i><span class="hidden-text"> マイページ</span>
+      <% end %>
+      <span> |</span>
+      <%= link_to("/themes/new") do %>
+        <i class="fas fa-rocket"></i><span class="hidden-text"> お題の投稿</span>
+      <% end %>
+      <span> |</span>
+      <%= link_to("/logout", method: "DELETE", data: { confirm: "ログアウトします。よろしいですか？" }) do %>
+        <i class="fas fa-sign-out-alt"></i><span class="hidden-text"> ログアウト</span>
+      <% end %>
+    </div>
+    <div class="clear"></div>
+  <% else %>
+    <a href="/"><img src="/images/logov3.png" alt="カレー味のうんち"></a>
+    <div class="roots">
+      <%= link_to("/roots") do %>
+        <i class="fas fa-home"></i><span class="hidden-text">サービス名の由来</span>
+      <% end %>
+    </div>
+    <div class="clear"></div>
+  <% end %>
+
+
+</header>

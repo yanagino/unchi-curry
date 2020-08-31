@@ -1,0 +1,47 @@
+<div class="container">
+
+<div class="form-text">
+  <h1>投票状況</h1>
+</div>
+
+<div class="summary">
+  <p class="result-title">
+  <%= link_to("お題『#{@theme.title}』","/themes/#{@theme.id}") %>
+  </p>
+  <div class="result-vote1-bottom">
+  <p>
+    <span class="result-vote1">A. <%= @theme.theme1 %></span>：<span class="summary-vote1"><%= @theme.vote1 %></span>
+  </p>
+  </div>
+  <p>
+    <span class="result-vote2">B. <%= @theme.theme2 %></span>：<span class="summary-vote2"><%= @theme.vote2 %></span>
+  </p>
+</div>
+
+<div class="center">
+<% unless correct_user_destroy %>
+  <div class="btn btn-tweet">
+    <%= link_to @tweet_url, target: "_blank" do %>
+      <span class="fab fa-twitter"> 結果をつぶやく
+    <% end %>
+  </div>
+<% else %>
+  <div class="btn btn-tweet">
+    <%= link_to @tweet_url, target: "_blank" do %>
+      <span class="fab fa-twitter"> 結果をつぶやく
+    <% end %>
+  </div>
+  <div class="btn btn-destroy">
+    <%= link_to("/themes/#{@theme.id}/destroy", method: "DELETE", data: { confirm: "一度削除すると復元できません。よろしいですか？" }) do %>
+      <span class="fas fa-trash-alt"></span> お題を削除する
+    <% end %>
+  </div>
+<% end %>
+</div>
+
+
+<div class="user-introduction">
+  <p>お題作成者：<%= link_to(@theme.user.name, "/users/#{@theme.user.uid}") %></p>
+</div>
+
+</div>

@@ -1,0 +1,15 @@
+ja:
+  activerecord:
+    attributes:
+      theme: 
+        title: お題
+        theme1: 回答A
+        theme2: 回答B
+
+  views:
+      pagination:
+        first: '最初'
+        last: '最後'
+        previous: '<'
+        next: '>'
+        truncate: '...'

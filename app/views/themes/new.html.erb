@@ -1,0 +1,40 @@
+<div class="container">
+
+<div class="form-text">
+  <h1>お題を投稿する</h1>
+</div>
+
+
+  <%= form_for(@theme) do |f| %>
+  <%= render("layouts/error_messages", model: f.object) %>
+
+  <div class="new-forms">
+
+    <div class="new-form">
+    <div class="form-1">
+      <%= f.label :title, "お題" %>
+      <%= f.text_field :title, autocomplete: "off", placeholder: "例: 食べるならどっち？（45文字まで）" %>
+    </div>
+    </div>
+
+    <div class="new-form">
+    <div class="form-2">
+      <%= f.label :theme1, "回答A" %>
+      <%= f.text_field :theme1, autocomplete: "off", placeholder: "例: うんこ味のカレー（20文字まで）" %>
+    </div>
+    </div>
+
+    <div class="form-3">
+    <div class="new-form">
+      <%= f.label :theme2, "回答B" %>
+      <%= f.text_field :theme2, autocomplete: "off", placeholder: "例: カレー味のうんこ（20文字まで）" %>
+    </div>
+    </div>
+
+    <%= button_tag type: "submit", class: "btn btn-submit" do %>
+      <span class="fas fa-rocket"></span> 投稿する
+    <% end %>
+
+  <% end %>
+
+</div>

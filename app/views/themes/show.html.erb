@@ -1,0 +1,38 @@
+<div class="container">
+
+<div class="form-text">
+  <h1>投票する</h1>
+</div>
+
+<p class="show-text">お題『<%= @theme.title %>』</p>
+
+<div class="vote-forms">
+  <%= form_tag("/themes/#{@theme.id}/add") do %>
+    <div class="optionA-head">
+      <input type="radio" name="vote" value="1" id="optionA">
+      <label for="optionA">
+        <span class="optionA">A. <%= @theme.theme1 %></span>
+      </label>
+    </div>
+    <div>
+      <input type="radio" name="vote" value="2" id="optionB">
+      <label for="optionB">
+        <span class="optionB">B. <%= @theme.theme2 %></span>
+      </label>
+    </div>
+    <div class="btn btn-vote">
+      <button type="submit">
+      <span class="fas fa-paper-plane"></span> 投票する
+    </div>
+  <% end %>
+</div>
+
+<div class="right">
+<div class="link-summary">
+  <%= link_to("/themes/#{@theme.id}/summary") do %>
+    投票状況だけ見る <span class="fas fa-chevron-right"></span>
+  <% end %>
+</div>
+</div>
+
+</div>

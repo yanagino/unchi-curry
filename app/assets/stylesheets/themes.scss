@@ -1,0 +1,325 @@
+// Place all the styles related to the themes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.contents-wrapper {
+  padding-bottom: 10px;
+}
+
+.contents-wrapper h2 {
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  border-radius: 3px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin: 0 130px 50px 130px;
+}
+
+.title-even {
+  background-color: rgba(223, 78, 90, 0.966);
+}
+
+.title-difference {
+  background-color: rgba(38, 117, 236, 0.918);
+}
+
+.title-popular {
+  background-color: rgba(181, 209, 19, 0.918);
+}
+
+.title-new {
+  background-color: rgba(236, 204, 59, 0.966);
+}
+
+.contents {
+  margin-bottom: 100px;
+}
+
+.contents-bottom {
+  margin-bottom: 90px;
+}
+
+.content {
+  position:relative;
+  padding: 50px 40px;
+  width: 100%;
+  //background-color: #dde9fa;
+  //box-shadow: inset 0 0 40px rgb(127, 142, 185), 0 2px 2px rgb(204, 204, 204);
+  background-color: #f3ede6;
+  box-shadow: inset 0 0 40px rgb(228, 210, 173);
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 1;
+  margin-bottom: 40px;
+  word-break: break-all;
+ }
+
+ .content a {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  text-align: center;
+  padding: 30px 20px 0px 20px;
+  vertical-align: middle;
+  color: #172852;
+ }
+
+ .content-title {
+  position: absolute;
+  top: -15px;
+  left: 30px;
+  padding: 4px 20px;
+  color: #c20a7b; /*タイトル色*/
+  font-weight: bold;
+  background-color: rgba(255,255,255, 0.8);
+  border-left: 2px dotted rgba(0,0,0,.1);
+  border-right: 2px dotted rgba(0,0,0,.1);
+  box-shadow: 0 0 5px rgba(0,0,0,0.2); 
+  transform: rotate(-5deg);
+ }
+
+ .form-text {
+  margin: 70px 0 60px 0;
+  text-align: center;
+ }
+
+ .new-forms {
+   text-align: center;
+ }
+
+ .new-form {
+   margin-bottom: 30px;
+ }
+
+ .new-form input {
+   height: 45px;
+   width: 80%;
+   font-size: 20px;
+   border-radius: 5px;
+   border: 1px solid #0c9ea3e3;
+   padding: 0 8px;
+ }
+
+ .new-form label {
+   font-size: 21px;
+   color: #172852;
+   margin-right: 20px;
+ }
+
+ .error_messages {
+  color: rgba(226, 15, 15, 0.87);
+  margin: 0 50px 70px 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 17px;
+ }
+
+.error_messages ul {
+ margin: 0;
+ padding: 0;
+ text-align: center;
+ list-style: none;
+}
+
+.error_messages li {
+ text-align: center;
+}
+
+.btn-submit {
+  margin: 30px 0 100px 0;
+  background-color: rgba(12, 190, 12, 0.904);
+  border: none;
+  padding: 20px 80px;
+  cursor: pointer;
+  box-shadow: 0 6px rgba(1, 82, 1, 0.904);
+}
+
+.btn-submit:active {
+  position: relative;
+  top: 6px;
+  box-shadow: none;
+}
+
+.btn-submit:focus {
+  outline: 0;
+}
+
+// resultは下記からーーーーーーーーーーーーーーーーーーーーーーーーー
+.summary {
+  text-align: center;
+}
+
+.summary p {
+  color: #172852;
+  font-size: 30px;
+}
+
+.result-title {
+  font-weight: bold;
+  margin-bottom: 50px;
+  word-break: break-all;
+}
+
+.user-introduction {
+  margin-top: 70px;
+  padding-bottom: 30px;
+  text-align: right;
+  font-size: 20px;
+}
+
+.center {
+  text-align: center;
+}
+
+.result-vote1 {
+  word-break: break-all;
+  padding-left: 10px;
+  border-left: 20px solid rgb(47, 144, 255);
+}
+
+.result-vote2 {
+  word-break: break-all;
+  padding-left: 10px;
+  border-left: 20px solid rgb(255, 47, 134);
+}
+
+.summary-vote1 {
+  background-color: rgb(47, 144, 255);
+  color: white;
+  padding: 5px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.summary-vote2 {
+  background-color: rgb(255, 47, 134);
+  color: white;
+  padding: 5px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.btn-destroy {
+  background-color: rgba(228, 32, 32, 0.959);
+  box-shadow: 0 6px rgba(145, 3, 3, 0.986);
+  margin-left: 15px;
+}
+
+.btn-destroy:active {
+  position: relative;
+  top: 6px;
+  box-shadow: none;
+}
+
+.result-vote1-bottom {
+  margin-bottom: 60px;
+}
+
+.result-title a:link, .result-title a:hover, .result-title a:visited {
+  color: #172852;
+}
+
+.btn-tweet {
+  background-color: rgb(17, 172, 192);
+  margin-top: 35px;
+  box-shadow: 0 4px rgb(3, 72, 82);
+}
+
+.btn-tweet:active {
+  position: relative;
+  top: 6px;
+  box-shadow: none;
+}
+
+// showは下記からーーーーーーーーーーーーーーーーーーーーーーーーー
+.show-text {
+  font-weight: bold;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #172852;
+  word-break: break-all;
+  font-size: 30px;
+}
+
+.vote-forms {
+  color: #172852;
+  font-size: 30px;
+  text-align: center;
+}
+
+.optionA-head {
+  margin-bottom: 60px;
+}
+
+.optionA {
+  padding-left: 10px;
+  border-left: 20px solid rgb(47, 144, 255);
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.optionB {
+  padding-left: 10px;
+  border-left: 20px solid rgb(255, 47, 134);
+  margin-left: 10px;
+}
+
+.right {
+  text-align: right;
+}
+
+.link-summary {
+  margin: 60px 0 80px 0;
+  background-color: orange;
+  display: inline-block;
+  text-align: right;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px rgb(160, 105, 3);
+}
+
+.link-summary a {
+  display: block;
+  padding: 10px 20px;
+}
+
+.link-summary:active {
+  position: relative;
+  top: 4px;
+  box-shadow: none;
+}
+
+.link-summary a:link, .link-summary a:hover, .link-summary a:visited {
+  color: white;
+}
+
+.btn-vote button {
+  margin: 70px 0 35px 0;
+  background-color: rgba(130, 192, 31, 0.986);
+  display: inline-block;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 70px;
+  opacity: 0.9;
+  font-size: 22px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px rgba(76, 117, 8, 0.986);
+}
+
+.btn-vote button:active {
+  position: relative;
+  top: 6px;
+  box-shadow: none;
+}
+
+.btn-vote button:focus {
+  outline: 0;
+}
