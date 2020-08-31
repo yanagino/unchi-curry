@@ -8,7 +8,9 @@ class HomesController < ApplicationController
     
     @themes_new = Theme.all.order(created_at: "DESC").limit(5)
 
-    @theme = Theme.where("id >= ?", rand(Theme.first.id .. Theme.last.id - 10)).first
+    if Theme.first
+      @theme = Theme.where("id >= ?", rand(Theme.first.id .. Theme.last.id)).first
+    end
   end
 
   def show
