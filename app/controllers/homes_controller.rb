@@ -2,7 +2,7 @@ class HomesController < ApplicationController
   def index
     @themes_even = Theme.where("sum > ?", 9).where(difference: 0).limit(5)
 
-    @themes_difference = Theme.where("sum > ?", 19).select("id, title, vote1, vote2, ABS(difference) AS difference_abs").where("difference_abs > sum * 0.5").order(different_abs: "DESC")
+    @themes_difference = Theme.where("sum > ?", 19).select("id, title, vote1, vote2, ABS(difference) AS difference_abs").where("difference_abs > sum * 0.5").order(difference_abs: "DESC")
 
     @themes_popular = Theme.all.order(sum: "DESC").limit(5)
     
