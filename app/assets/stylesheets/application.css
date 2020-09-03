@@ -406,26 +406,26 @@ footer p {
 
   header {
     padding: 0;
+    height: 55px;
   }
 
   header img {
-    margin-left: 10px;
-    height: 31px;
-    padding-top: 10px;
+    margin: 8px 0 10px 10px;
+    height: 33px;
   }
 
   .login-user {
-    padding: 3px 10px 0 0;
-    font-size: 20px;
+    padding: 13px 10px 0 0;
+    font-size: 21px;
   }
 
   .roots {
-    padding: 0 10px 0 0;
-    font-size: 24px;
+    padding: 7px 10px 0 0;
+    font-size: 27px;
   }
 
   .alert {
-    margin-top: 37px;
+    margin-top: 55px;
     height: 20px;
     line-height: 20px;
   }
@@ -444,7 +444,7 @@ footer p {
   }
 
   .lp-text h3 {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .different-background {
@@ -452,7 +452,7 @@ footer p {
   }
 
   .btn a {
-    padding: 5px 40px;
+    padding: 8px 40px;
     display: block;
     font-size: 17px;
   }
@@ -491,6 +491,10 @@ footer p {
     text-align: center;
   }
 
+  .bottom-background p {
+    text-align: left;
+  }
+
   .bottom-background h2 {
     padding-top: 10px;
     font-size: 19px;
@@ -525,11 +529,11 @@ footer p {
 
   /*↓contents--------------------------------------------*/
   .contents {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
   }
   
   .contents-bottom {
-    margin-bottom: 50px;
+    margin-bottom: 90px;
   }
   
   .content {

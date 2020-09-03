@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get "/users/:uid" => "users#show"
 
   #なぞなぞ関連のルーティング
-  get "/themes/new" => "themes#new"
+  get "/themes" => "themes#new"
   post "/themes" => "themes#create"
   post "/themes/:id/add" => "themes#add"
   delete "/themes/:id/destroy" => "themes#destroy"

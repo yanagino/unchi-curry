@@ -8,10 +8,11 @@
 <div class="clear"></div>
 </div>
 
+<% unless logged_in? %>
 <div class="different-background">
   <div class="container">
   <div class="lp-text">
-    <h3>「カレー味のうんち」は、答えがちょうど50対50になるような究極の質問の作成を目指すサイトです。</h3>
+    <h3>「カレー味のうんち」は、答えがちょうど50対50になるような究極の選択の作成を目指すサイトです。</h3>
     <h3>サービス名の由来は、右上の<i class="fas fa-home"></i>マークより確認できます。</h3>
   </div>
   <div class="btn btn-login">
@@ -21,6 +22,7 @@
   </div>
   </div>
 </div>
+<% end %>
 
 <div class="container">
 <div class="contents-wrapper">
@@ -114,11 +116,11 @@
   <h2>【ログインしてできること】</h2>
   <h3>お題の投稿ができるようになります</h3>
 
+  <h4>ー注意事項ー</h4>
   <p>
-  ー注意事項ー
-  <br>本サービスはすべて無料で利用できます。
-  <br>勝手にTwitterでツイート・RT・フォローなどをすることはありませんのでご安心ください。
-  <br>またログインに使用したTwitterのアカウント情報は、本サービス以外に使用することはありません。
+  ・本サービスはすべて無料で利用できます。
+  <br>・勝手にTwitterでツイート・RT・フォローなどをすることはありませんのでご安心ください。
+  <br>・またログインに使用したTwitterのアカウント情報は、本サービス以外に使用することはありません。
   </p>
   <div class="btn btn-login">
     <%= link_to("/auth/twitter") do %>

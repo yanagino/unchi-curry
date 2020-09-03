@@ -30,12 +30,12 @@
   background-color: rgb(3, 169, 190);
   margin-top: 20px;
   margin-bottom: 60px;
-  box-shadow: 0 6px rgb(1, 77, 87);
+  box-shadow: 0 4px rgb(1, 77, 87);
 }
 
 .btn-login:active {
   position: relative;
-  top: 6px;
+  top: 4px;
   box-shadow: none;
 }
 
@@ -75,13 +75,13 @@
 
 .btn-random {
   background-color: rgba(9, 60, 136, 0.884);
-  box-shadow: 0 6px rgba(3, 25, 58, 0.884);
+  box-shadow: 0 4px rgba(3, 25, 58, 0.884);
   margin-bottom: 25px;
 }
 
 .btn-random:active {
   position: relative;
-  top: 6px;
+  top: 4px;
   box-shadow: none;
 }
 

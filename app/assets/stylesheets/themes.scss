@@ -95,6 +95,14 @@
    margin-bottom: 30px;
  }
 
+ input {
+   outline: none;
+ }
+
+ input:focus {
+  box-shadow: 0 0 6px 0 #09acddef;
+}
+
  .new-form input {
    height: 45px;
    width: 80%;
@@ -136,12 +144,12 @@
   border: none;
   padding: 20px 80px;
   cursor: pointer;
-  box-shadow: 0 6px rgba(1, 82, 1, 0.904);
+  box-shadow: 0 4px rgba(1, 82, 1, 0.904);
 }
 
 .btn-submit:active {
   position: relative;
-  top: 6px;
+  top: 4px;
   box-shadow: none;
 }
 
@@ -208,13 +216,13 @@
 
 .btn-destroy {
   background-color: rgba(228, 32, 32, 0.959);
-  box-shadow: 0 6px rgba(145, 3, 3, 0.986);
+  box-shadow: 0 4px rgba(145, 3, 3, 0.986);
   margin-left: 15px;
 }
 
 .btn-destroy:active {
   position: relative;
-  top: 6px;
+  top: 4px;
   box-shadow: none;
 }
 
@@ -234,7 +242,7 @@
 
 .btn-tweet:active {
   position: relative;
-  top: 6px;
+  top: 4px;
   box-shadow: none;
 }
 
@@ -311,12 +319,12 @@
   font-size: 22px;
   border: none;
   cursor: pointer;
-  box-shadow: 0 6px rgba(76, 117, 8, 0.986);
+  box-shadow: 0 4px rgba(76, 117, 8, 0.986);
 }
 
 .btn-vote button:active {
   position: relative;
-  top: 6px;
+  top: 4px;
   box-shadow: none;
 }
 
