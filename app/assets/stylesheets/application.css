@@ -415,12 +415,12 @@ footer p {
   }
 
   .login-user {
-    padding: 13px 10px 0 0;
+    padding: 16px 10px 0 0;
     font-size: 21px;
   }
 
   .roots {
-    padding: 7px 10px 0 0;
+    padding: 10px 10px 0 0;
     font-size: 27px;
   }
 
@@ -529,7 +529,7 @@ footer p {
 
   /*↓contents--------------------------------------------*/
   .contents {
-    margin-bottom: 80px;
+    margin-bottom: 70px;
   }
   
   .contents-bottom {
