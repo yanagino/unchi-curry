@@ -194,8 +194,20 @@ footer p {
     font-size: 22px;
   }
 
+  .lp-br-mid {
+    display: block;
+  }
+
+  .lp-dot {
+    display: inline;
+  }
+
+  .root-br {
+    display: block;
+  }
+
   .btn {
-    width: 100%;
+    width: 80%;
   }
 
   .btn-login {
@@ -217,6 +229,7 @@ footer p {
   .random-background {
     margin: 20px 0;
   }
+
   /*↓名前の由来--------------------------------------------*/
   .roots-text {
     margin: 40px 0 60px 0;
@@ -431,7 +444,7 @@ footer p {
   }
 
   .header-text {
-    margin: 60px 0;
+    margin: 90px 0 70px 0;
   }
 
   .header-text h1 {
@@ -439,7 +452,7 @@ footer p {
   }
 
   .header-image {
-    margin: 0;
+    margin: 30px 0 0 0;
     width: 40%;
   }
 
@@ -449,6 +462,10 @@ footer p {
 
   .different-background {
     margin-bottom: 50px;
+  }
+
+  .btn {
+    width: 85%;
   }
 
   .btn a {
@@ -485,6 +502,10 @@ footer p {
 
   .random-background h3 {
     font-size: 17px;
+  }
+
+  .random-br {
+    display: block;
   }
 
   .bottom-background {
@@ -612,11 +633,13 @@ footer p {
   .result-vote1 {
     padding-left: 2px;
     border-left: 12px solid rgb(47, 144, 255);
+    line-height: 36px;
   }
   
   .result-vote2 {
     padding-left: 2px;
     border-left: 12px solid rgb(255, 47, 134);
+    line-height: 36px;
   }
   
   .summary-vote1 {
@@ -653,11 +676,12 @@ footer p {
    .new-form input {
      font-size: 15px;
      width: 100%;
-     height: 40px;
+     height: 43px;
+     margin-top: 3px;
    }
   
    .new-form label {
-   font-size: 19px;
+   font-size: 18px;
    margin: 0 0 0 5px;
    font-weight: bold;
    }
@@ -669,7 +693,8 @@ footer p {
 
   .btn-submit {
     margin: 30px 0 80px 0;
-    padding: 10px 80px;
+    padding: 10px 40px;
+    font-size: 23px;
   }
 
   /*↓user/show--------------------------------------------*/

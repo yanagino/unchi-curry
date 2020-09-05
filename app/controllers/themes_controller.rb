@@ -54,13 +54,16 @@ class ThemesController < ApplicationController
         @theme.save
         flash[:success] = "投票しました"
         redirect_to("/themes/#{@theme.id}/summary")
-      else 
+      elsif params[:vote].to_i == 2
         @theme.vote2 += 1
         @theme.sum += 1
         @theme.difference -= 1
         @theme.save
         flash[:success] = "投票しました"
         redirect_to("/themes/#{@theme.id}/summary")
+      else
+        flash.now[:danger] = "投票できませんでした"
+        render("themes/show")
       end
     else
       flash[:danger] = "投票できませんでした"

@@ -57,14 +57,13 @@
 
  .content a {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   z-index: 2;
   text-align: center;
   padding: 30px 20px 0px 20px;
-  vertical-align: middle;
   color: #172852;
  }
 
@@ -99,16 +98,13 @@
    outline: none;
  }
 
- input:focus {
-  box-shadow: 0 0 6px 0 #09acddef;
-}
-
  .new-form input {
-   height: 45px;
+   height: 50px;
    width: 80%;
    font-size: 20px;
    border-radius: 5px;
-   border: 1px solid #0c9ea3e3;
+   background-color: rgba(192, 188, 173, 0.938);
+   border: none;
    padding: 0 8px;
  }
 
