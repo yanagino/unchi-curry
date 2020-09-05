@@ -458,6 +458,7 @@ footer p {
 
   .lp-text h3 {
     font-size: 16px;
+    line-height: 27px;
   }
 
   .different-background {
@@ -528,6 +529,7 @@ footer p {
 
   .bottom-background p {
     font-size: 13px;
+    line-height: 23px;
   }
 
   /*↓名前の由来--------------------------------------------*/
@@ -596,12 +598,14 @@ footer p {
     padding-left: 2px;
     border-left: 12px solid rgb(47, 144, 255);
     margin-left: 0px;
+    line-height: 36px;
   }
   
   .optionB {
     padding-left: 2px;
     border-left: 12px solid rgb(255, 47, 134);
     margin-left: 0px;
+    line-height: 36px;
   }
 
   .btn-vote button {
